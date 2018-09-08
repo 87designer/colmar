@@ -58,7 +58,6 @@ header {
 }
 
 .logo-link {
-  display: flex;
   text-decoration: none;
   color: inherit;
 }
@@ -426,13 +425,17 @@ footer a {
 }
 
 .hide {
-    visibility: hidden;
+    display: none;
 }
 
 
 
 @media only screen and (max-width: 470px) {
   /*  Smart Phone Media Query  */
+
+  .hide {
+    display: inline;
+  }
 
   header {
     display: flex;
@@ -441,28 +444,131 @@ footer a {
   }
 
   .logo {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    height: auto;
+    width: 100%;
+  }
 
+  .logo-link {
+    display: none;
   }
 
   .logo span {
-    visibility: hidden;
+    display: none;
   }
 
   nav {
-    visibility: hidden;
+    display: none;
   }
 
   .banner {
     display: flex;
     flex-direction: column;
+    padding: 0px;
+  }
+
+  .banner img {
+    width: 100%;
+  }
+
+  .title {
+      margin: 32px 16px;
+      letter-spacing: normal;
+  }
+
+  .title h1 {
+    padding-bottom: 32px;
+  }
+
+  .title h3 {
+    margin: 0px;
+    padding-bottom: 24px;
   }
 
   .practice {
+    padding: 16px;
+    border-bottom: 1px solid #F2D653;
+  }
+
+  .quote {
+    display: none;
+  }
+
+  .bullet-display {
+    padding: 0px;
+    width: 100%;
+    border: none;
+  }
+
+  .bullet {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 64px;
+  }
+
+  .bullet .hide {
+    display: flex;
+    margin: 0px;
+    padding: 0px;
+  }
+
+  .box1 {
+    border: none;
+  }
+
+  .box1 img {
+    width: 100%;
+  }
+
+  .box2 {
+
+  }
+
+  .box2 img {
+    width: 100%;
+  }
+
+  .box3 {
+    background-color: inherit;
+  }
+
+  .box3 img {
+    width: 100%;
+  }
+
+  .bullet img {
+    display: none;
+  }
+
+  .bullet-text {
+    width: auto;
+    padding: 32px 16px 0px 16px;
+  }
+
+  .bullet-text h3 {
+    padding-bottom: 16px;
+  }
+
+  .bullet-text span {
+    margin: 0px;
+    padding-bottom: 16px;
+  }
+
+  .bullet-text a {
 
   }
 
   .learn {
+    background-color: inherit;
+  }
 
+  .study-area {
+    display: flex;
+    flex-direction: column;
+    margin: 32px 16px;
   }
 
   .exhibit {
