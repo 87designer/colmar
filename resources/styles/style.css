@@ -1,0 +1,262 @@
+/* Open Sans Condensed */
+@font-face {
+  font-family: 'Open Sans Condensed';
+  font-style: normal;
+  font-weight: 300;
+  src: local('Open Sans Condensed Light'), local('OpenSansCondensed-Light'), url(https://fonts.gstatic.com/s/opensanscondensed/v12/z7NFdQDnbTkabZAIOl9il_O6KJj73e7Ff1GhDuXMRw.woff2) format('woff2');
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+}
+
+@font-face {
+  font-family: 'Open Sans Condensed';
+  font-style: normal;
+  font-weight: 700;
+  src: local('Open Sans Condensed Bold'), local('OpenSansCondensed-Bold'), url(https://fonts.gstatic.com/s/opensanscondensed/v12/z7NFdQDnbTkabZAIOl9il_O6KJj73e7Ff0GmDuXMRw.woff2) format('woff2');
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+}
+
+/* Lora */
+@font-face {
+  font-family: 'Lora';
+  font-style: italic;
+  font-weight: 400;
+  src: local('Lora Italic'), local('Lora-Italic'), url(https://fonts.gstatic.com/s/lora/v12/0QIhMX1D_JOuMw_LIftL.woff2) format('woff2');
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+}
+
+@font-face {
+  font-family: 'Lora';
+  font-style: normal;
+  font-weight: 400;
+  src: local('Lora Regular'), local('Lora-Regular'), url(https://fonts.gstatic.com/s/lora/v12/0QIvMX1D_JOuMwr7Iw.woff2) format('woff2');
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+}
+
+@font-face {
+  font-family: 'Lora';
+  font-style: normal;
+  font-weight: 700;
+  src: local('Lora Bold'), local('Lora-Bold'), url(https://fonts.gstatic.com/s/lora/v12/0QIgMX1D_JOuO7HeNtxumg.woff2) format('woff2');
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+}
+
+html {
+  font-size: 18px;
+}
+
+.site-container {
+
+}
+
+header {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  height: 64px;
+  width: auto;
+  padding: 0px 24px;
+}
+
+.logo-link {
+  display: flex;
+  text-decoration: none;
+  color: inherit;
+}
+
+.logo {
+  font-family: 'Open Sans Condensed';
+  letter-spacing: 0.05em;
+  height: 32px;
+  display: flex;
+  flex-direction: row;
+  align-self:center;
+  justify-content: flex-start;
+}
+
+.logo img {
+
+}
+
+.logo span {
+  font-size: 1.5em;
+  margin-right: 0.05em;
+}
+
+.logo700 {
+  font-weight: 700;
+}
+
+.logo300 {
+  font-weight: 300;
+}
+
+nav {
+  font-family: 'Open Sans Condensed';
+  font-weight: 300;
+  letter-spacing: 0.04em;
+  height: 32px;
+  width: auto;
+  display: flex;
+  flex-direction: row;
+  align-self: center;
+}
+
+nav a {
+  color: inherit;
+  align-self: center;
+  margin-left: 16px;
+  text-decoration: none;
+}
+
+.banner {
+  display: flex;
+  flex-direction: row;
+  height: auto;
+  width: auto;
+  padding: 32px 24px;
+  background-color: lightgray;
+}
+
+.banner img {
+  width: 60%;
+  height: 100%;
+  margin-right: 24px;
+}
+
+.title {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.title h1 {
+  font-family: 'Open Sans Condensed';
+  font-weight: 700;
+  font-size: 2.5em;
+  letter-spacing: 0.05em;
+}
+
+.title h3 {
+  font-family: 'Open Sans Condensed';
+  font-weight: 700;
+  font-size: 1em;
+  letter-spacing: 0.05em;
+  margin: 24px 0px;
+}
+
+.title a {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-family: 'Open Sans Condensed';
+  font-weight: 300;
+  font-size: 1em;
+  letter-spacing: 0.05em;
+  height: 45px;
+  width: auto;
+  text-decoration: none;
+  color: white;
+  background-color: black;
+  padding: auto;
+}
+
+
+
+.practice {
+  display: flex;
+  flex-direction: row;
+  height: auto;
+  width: auto;
+}
+
+.quote {
+  font-family: 'Lora';
+  font-weight: 400;
+  display: flex;
+  flex-direction: column;
+  width: 60%;
+  height: 100%;
+  margin: 32px 24px 32px 24px;
+}
+
+.quote img {
+  width: 100%;
+  height: auto;
+}
+
+.quote-text {
+  display: flex;
+  flex-direction: column;
+  margin: 32px 0px;
+  height: auto;
+  width: auto;
+}
+
+.quote-text h2 {
+  margin-bottom: 24px;
+  font-size: 2em;
+}
+
+.quote-text p {
+  margin-bottom: 32px;
+}
+
+.quote-text span {
+  font-family: 'Open Sans Condensed';
+  font-weight: 300;
+  letter-spacing: 0.05em;
+}
+
+.bullet-display {
+  display: flex;
+  flex-direction: column;
+  width: 40%;
+  height: auto;
+  margin-top: 32px;
+  border-left: 1px solid gray;
+}
+
+.bullet {
+  display: flex;
+  flex-direction: row;
+}
+
+.bullet img {
+  width: 35%;
+  height: 100%;
+  padding: 16px;
+}
+
+.box1 img {
+  width: 35%;
+  height: 100%;
+  padding-top: 0px;
+}
+
+.bullet-text {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  width: 65%;
+  padding-right: 16px;
+}
+
+.bullet-text h3 {
+  font-family: 'Open Sans Condensed';
+  font-weight: 700;
+  font-size: 1.75em;
+
+}
+
+.bullet-text span {
+  font-size: 1em;
+  margin: 8px 0px;
+
+}
+
+.bullet-text a {
+  font-size: 1em;
+  text-decoration: none;
+  color: inherit;
+
+}
