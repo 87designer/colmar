@@ -564,12 +564,17 @@ footer a {
   .learn {
     background-color: inherit;
     border-bottom: 1px solid #F2D653;
+    width: auto;
+    height: 100%;
+    padding: 0px 16px 32px 16px;
   }
 
   .study-area {
     display: flex;
     flex-direction: column;
-    margin: 8px 16px 32px 16px;
+    width: 100%;
+    height: auto;
+    margin: 8px 0px 0px 0px;
   }
 
   .learn-box {
