@@ -41,6 +41,7 @@
 /*  Overall Section  */
 html {
   font-size: 18px;
+  color: #373C4A;
 }
 
 /*  Header & Nav Section  */
@@ -51,6 +52,7 @@ header {
   height: 64px;
   width: auto;
   padding: 0px 24px;
+  background-color: #373C4A;
 }
 
 .logo-link {
@@ -67,6 +69,7 @@ header {
   flex-direction: row;
   align-self:center;
   justify-content: flex-start;
+  color: #F9FFBD;
 }
 
 .logo span {
@@ -94,7 +97,7 @@ nav {
 }
 
 nav a {
-  color: inherit;
+  color: #F9FFBD;
   align-self: center;
   margin-left: 16px;
   text-decoration: none;
@@ -107,7 +110,7 @@ nav a {
   height: auto;
   width: auto;
   padding: 32px 24px;
-  background-color: lightgray;
+  background-color: #F2D653;
 }
 
 .banner img {
@@ -120,6 +123,7 @@ nav a {
   display: flex;
   flex-direction: column;
   justify-content: center;
+  color: #37424A;
 }
 
 .title h1 {
@@ -148,8 +152,8 @@ nav a {
   height: 45px;
   width: auto;
   text-decoration: none;
-  color: white;
-  background-color: black;
+  color: #F9FFBD;
+  background-color: #373C4A;
   padding: auto;
 }
 
@@ -168,7 +172,7 @@ nav a {
   flex-direction: column;
   width: 60%;
   height: 100%;
-  margin: 32px 24px 32px 24px;
+  margin: 32px 24px 0px 24px;
 }
 
 .quote img {
@@ -179,7 +183,7 @@ nav a {
 .quote-text {
   display: flex;
   flex-direction: column;
-  margin: 32px 0px;
+  padding: 32px 0px;
   height: auto;
   width: auto;
 }
@@ -192,6 +196,7 @@ nav a {
 }
 
 .quote-text p {
+  justify-content: space-between;
   margin-bottom: 32px;
 }
 
@@ -237,11 +242,12 @@ nav a {
 }
 
 .box3 {
-  background-color: lightgray;
+  background-color: #F2D653;
+  margin-bottom: 32px;
 }
 
 .box3 .bullet-text a {
-  color: white;
+  color: #3EA0FF;
 }
 
 .bullet-text {
@@ -269,7 +275,7 @@ nav a {
   font-size: 1em;
   letter-spacing: 0.075em;
   text-decoration: none;
-  color: darkgray;
+  color: #3EA0FF;
 }
 
 /*  Start Learning Section  */
@@ -279,7 +285,7 @@ nav a {
   align-items: center;
   width: 100%;
   height: auto;
-  background-color: lightgray;
+  background-color: #F2D653;
 }
 
 .learn h2 {
@@ -304,7 +310,7 @@ nav a {
   height: auto;
   width: 30%;
   margin: 16px;
-  background-color: white;
+  background-color: #F9FFBD;
 }
 
 .learn-box img {
