@@ -75,6 +75,7 @@ header {
 .logo span {
   font-size: 1.5em;
   margin-right: 0.05em;
+  align-self: center;
 }
 
 .logo700 {
@@ -212,7 +213,7 @@ nav a {
   width: 40%;
   height: auto;
   padding-top: 32px;
-  border-left: 1px solid lightgray;
+  border-left: 1px solid #F2D653;
 }
 
 .bullet {
@@ -227,7 +228,7 @@ nav a {
 }
 
 .box1 {
-  border-bottom: 1px solid lightgray;
+  border-bottom: 1px solid #F2D653;
   margin-bottom: 2px;
 }
 
@@ -238,7 +239,7 @@ nav a {
 }
 
 .box2 {
-  border-top: 1px solid lightgray;
+  border-top: 1px solid #F2D653;
 }
 
 .box3 {
@@ -256,6 +257,8 @@ nav a {
   justify-content: center;
   width: 65%;
   padding-right: 16px;
+  font-family: 'Lora';
+  font-weight: 400;
 }
 
 .bullet-text h3 {
@@ -343,4 +346,110 @@ nav a {
   letter-spacing: 0.075em;
   line-height: 1.3em;
   margin-top: 16px;
+}
+
+/*  Exhibt Section  */
+.exhibit {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+  height: auto;
+}
+
+.exhibit-box {
+  display: flex;
+  flex-direction: row;
+  height: auto;
+  width: auto;
+}
+
+.exhibit h2 {
+  font-family: 'Open Sans Condensed';
+  font-weight: 700;
+  font-size: 2em;
+  margin-top: 32px;
+
+}
+
+.video {
+  width: 60%;
+  margin: 32px 24px 0px 24px;
+}
+
+.video video {
+  width: 100%;
+  height: auto;
+}
+
+.video-text {
+  margin-top: 24px;
+}
+
+.video-text h3 {
+  font-family: 'Open Sans Condensed';
+  font-weight: 700;
+  font-size: 1.75em;
+  margin-bottom: 8px;
+}
+
+.video-text p {
+  font-family: 'Lora';
+  font-style: normal;
+  font-weight: 400;
+}
+
+.box4 {
+  background-color: #F2D653;
+}
+
+
+/*  Footer Section  */
+footer {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  height: 64px;
+  width: auto;
+  padding: 16px 24px;
+  margin-top: 32px;
+  border-top: 1px solid #F2D653;
+  font-family: 'Open Sans Condensed';
+  font-weight: 300;
+  letter-spacing: 0.075em;
+}
+
+footer a {
+  text-decoration: none;
+  margin-left: 16px;
+}
+
+@media only screen and (max-width: 470px) {
+  /*  Smart Phone Media Query  */
+
+  header {
+
+  }
+
+  .banner {
+
+  }
+
+  .practice {
+
+  }
+
+  .learn {
+
+  }
+
+  .exhibit {
+
+  }
+
+  footer {
+
+  }
+
+
 }
