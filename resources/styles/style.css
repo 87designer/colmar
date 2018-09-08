@@ -434,7 +434,7 @@ footer a {
   /*  Smart Phone Media Query  */
 
   .hide {
-    display: inline;
+    display: inline-flex;
   }
 
   header {
@@ -563,12 +563,31 @@ footer a {
 
   .learn {
     background-color: inherit;
+    border-bottom: 1px solid #F2D653;
   }
 
   .study-area {
     display: flex;
     flex-direction: column;
-    margin: 32px 16px;
+    margin: 8px 16px 32px 16px;
+  }
+
+  .learn-box {
+    width: 100%;
+    margin: 8px 0px;
+    background-color: #F2D653;
+  }
+
+  .learn-box img {
+    display: none;
+  }
+
+  .learn-text h3 {
+
+  }
+
+  .learn-text p {
+    display: none;
   }
 
   .exhibit {
