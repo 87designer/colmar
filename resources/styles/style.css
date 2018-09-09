@@ -1,36 +1,35 @@
 /*  Google Fonts  */
-
-/* Open Sans Condensed */
-@font-face {
+  /* Open Sans Condensed */
+  @font-face {
   font-family: 'Open Sans Condensed';
   font-style: normal;
   font-weight: 300;
   src: local('Open Sans Condensed Light'), local('OpenSansCondensed-Light'), url(https://fonts.gstatic.com/s/opensanscondensed/v12/z7NFdQDnbTkabZAIOl9il_O6KJj73e7Ff1GhDuXMRw.woff2) format('woff2');
   unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
 }
-@font-face {
+  @font-face {
   font-family: 'Open Sans Condensed';
   font-style: normal;
   font-weight: 700;
   src: local('Open Sans Condensed Bold'), local('OpenSansCondensed-Bold'), url(https://fonts.gstatic.com/s/opensanscondensed/v12/z7NFdQDnbTkabZAIOl9il_O6KJj73e7Ff0GmDuXMRw.woff2) format('woff2');
   unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
 }
-/* Lora */
-@font-face {
+  /* Lora */
+  @font-face {
   font-family: 'Lora';
   font-style: italic;
   font-weight: 400;
   src: local('Lora Italic'), local('Lora-Italic'), url(https://fonts.gstatic.com/s/lora/v12/0QIhMX1D_JOuMw_LIftL.woff2) format('woff2');
   unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
 }
-@font-face {
+  @font-face {
   font-family: 'Lora';
   font-style: normal;
   font-weight: 400;
   src: local('Lora Regular'), local('Lora-Regular'), url(https://fonts.gstatic.com/s/lora/v12/0QIvMX1D_JOuMwr7Iw.woff2) format('woff2');
   unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
 }
-@font-face {
+  @font-face {
   font-family: 'Lora';
   font-style: normal;
   font-weight: 700;
@@ -39,12 +38,13 @@
 }
 
 
-
 /*  Overall Section  */
 html {
   font-size: 18px;
   color: #373C4A;
 }
+
+
 
 /*  Header & Nav Section  */
 header {
@@ -101,9 +101,21 @@ nav {
 nav a {
   color: #F9FFBD;
   align-self: center;
-  margin-left: 16px;
+  margin: 8px;
+  padding: 8px;
   text-decoration: none;
+  border-radius: 5px;
+  transition: background-color;
+  transition-duration: 500ms;
 }
+
+nav a:hover {
+  background-color: #F9FFBD;
+  color: #3EA0FF;
+  border-radius: 5px;
+}
+
+
 
 /*  Banner Section  */
 .banner {
@@ -157,7 +169,17 @@ nav a {
   color: #F9FFBD;
   background-color: #373C4A;
   padding: auto;
+  transition-property: background-color;
+  transition-duration: 500ms;
+  border-radius: 5px;
 }
+
+.title a:hover {
+  background-color: #F9FFBD;
+  color: #3EA0FF;
+}
+
+
 
 /*  Quote & Bullet Section  */
 .practice {
@@ -282,6 +304,8 @@ nav a {
   color: #3EA0FF;
 }
 
+
+
 /*  Start Learning Section  */
 .learn {
   display: flex;
@@ -315,11 +339,25 @@ nav a {
   width: 30%;
   margin: 16px;
   background-color: #F9FFBD;
+  transition: background-color 0.4s ease;
+}
+
+.learn-box:hover {
+  background-color: white;
+}
+
+.learn-box .img {
+  overflow: hidden;
 }
 
 .learn-box img {
   height: auto;
   width: 100%;
+  transition: 0.6s ease;
+}
+
+.learn-box:hover .img img {
+  transform: scale(1.2);
 }
 
 .learn-text {
@@ -334,9 +372,9 @@ nav a {
 
 .learn-text span {
   font-family: 'Open Sans Condensed';
-  font-weight: 300;
+  font-weight: 700;
   font: 1.5em;
-  letter-spacing: 0.075em;
+  letter-spacing: 0.35em;
   text-transform: uppercase;
 }
 
@@ -348,6 +386,8 @@ nav a {
   line-height: 1.3em;
   margin-top: 16px;
 }
+
+
 
 /*  Exhibt Section  */
 .exhibit {
@@ -404,6 +444,8 @@ nav a {
   background-color: #F2D653;
 }
 
+
+
 /*  Footer Section  */
 footer {
   display: flex;
@@ -430,8 +472,64 @@ footer a {
 
 
 
-@media only screen and (max-width: 470px) {
-  /*  Smart Phone Media Query  */
+@media only screen and (max-width: 1120px) {
+  /* On screens that are 1120px wide or less, go from three columns to two columns */
+
+  .learn-box {
+    width: 46%;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .quote {
+    width: 35;
+  }
+
+  .bullet-display {
+    width: 65%;
+    height: auto;
+  }
+
+  .bullet {
+    padding: 16px;
+  }
+
+  .box1 {
+    width: auto;
+  }
+
+  .box2 {
+    width: auto;
+  }
+
+  .box3 {
+    width: auto;
+  }
+}
+
+
+
+@media only screen and (max-width: 898px) {
+  /* On screens that are 811px wide or less, hide quote */
+
+  .practice {
+    padding: 24px;
+  }
+
+  .quote {
+    display: none;
+  }
+
+  .bullet-display {
+    border: none;
+    width: 100%;
+  }
+}
+
+
+
+@media only screen and (max-width: 667px) {
+  /* On screens that are 470px wide or less, go from two columns to one columns */
 
   .hide {
     display: inline-flex;
