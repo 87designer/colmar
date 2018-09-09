@@ -452,16 +452,8 @@ footer a {
     width: 100%;
   }
 
-  .logo-link {
-    display: none;
-  }
-
-  .logo span {
-    display: none;
-  }
-
-  nav {
-    display: none;
+  .logo-link, .logo span, nav, .quote, .bullet img, .learn-box img, .learn-text p, .exhibit-box .bullet-display, .video-text {
+      display: none;
   }
 
   .banner {
@@ -493,10 +485,6 @@ footer a {
     border-bottom: 1px solid #F2D653;
   }
 
-  .quote {
-    display: none;
-  }
-
   .bullet-display {
     padding: 0px;
     width: 100%;
@@ -523,10 +511,6 @@ footer a {
     width: 100%;
   }
 
-  .box2 {
-
-  }
-
   .box2 img {
     width: 100%;
   }
@@ -537,10 +521,6 @@ footer a {
 
   .box3 img {
     width: 100%;
-  }
-
-  .bullet img {
-    display: none;
   }
 
   .bullet-text {
@@ -555,10 +535,6 @@ footer a {
   .bullet-text span {
     margin: 0px;
     padding-bottom: 16px;
-  }
-
-  .bullet-text a {
-
   }
 
   .learn {
@@ -583,24 +559,33 @@ footer a {
     background-color: #F2D653;
   }
 
-  .learn-box img {
-    display: none;
-  }
-
-  .learn-text h3 {
-
-  }
-
-  .learn-text p {
-    display: none;
-  }
-
   .exhibit {
+    margin: 32px 0px 24px 0px;
+  }
 
+  .exhibit h2 {
+    margin: 0px 0px 16px 0px;
+  }
+
+  .video {
+    width: 100%;
+    height: auto;
+    margin: 0px;
   }
 
   footer {
-
+    margin: 0px;
+    border: none;
+    height: auto;
+    width: 100%;
   }
 
+  footer span {
+    height: auto;
+    width: 100%;
+  }
+
+  footer div {
+    display: none;
+  }
 }
